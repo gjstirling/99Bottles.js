@@ -75,8 +75,7 @@ describe('Bottles', () => {
       '1 six-pack of beer on the wall, ' +
       '1 six-pack of beer.\n' +
       'Take one down and pass it around, ' +
-      '5 bottles of beer on the wall.\n' +
-      '\n'
+      '5 bottles of beer on the wall.\n'
     expect(new Bottles().verses(6, 6)).toBe(expected);
   });
 
@@ -85,8 +84,7 @@ describe('Bottles', () => {
       '7 bottles of beer on the wall, ' +
       '7 bottles of beer.\n' +
       'Take one down and pass it around, ' +
-      '1 six-pack of beer on the wall.\n' +
-      '\n'
+      '1 six-pack of beer on the wall.\n'
     expect(new Bottles().verses(7, 7)).toBe(expected);
   });
 
