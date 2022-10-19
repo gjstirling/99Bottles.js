@@ -70,6 +70,45 @@ describe('Bottles', () => {
     expect(new Bottles().verses(2, 0)).toBe(expected);
   });
 
+  test('verse 6', () => {
+    const expected =
+      '1 six-pack of beer on the wall, ' +
+      '1 six-pack of beer.\n' +
+      'Take one down and pass it around, ' +
+      '5 bottles of beer on the wall.\n' +
+      '\n' +
+      '5 bottles of beer on the wall, ' +
+      '5 bottles of beer.\n' +
+      'Take one down and pass it around, ' +
+      '4 bottles of beer on the wall.\n' +
+      '\n' +
+      '4 bottles of beer on the wall, ' +
+      '4 bottles of beer.\n' +
+      'Take one down and pass it around, ' +
+      '3 bottles of beer on the wall.\n' +
+      '\n' +
+      '3 bottles of beer on the wall, ' +
+      '3 bottles of beer.\n' +
+      'Take one down and pass it around, ' +
+      '2 bottles of beer on the wall.\n' +
+      '\n' +
+      '2 bottles of beer on the wall, ' +
+      '2 bottles of beer.\n' +
+      'Take one down and pass it around, ' +
+      '1 bottle of beer on the wall.\n' +
+      '\n' +
+      '1 bottle of beer on the wall, ' +
+      '1 bottle of beer.\n' +
+      'Take it down and pass it around, ' +
+      'no more bottles of beer on the wall.\n' +
+      '\n' +
+      'No more bottles of beer on the wall, ' +
+      'no more bottles of beer.\n' +
+      'Go to the store and buy some more, ' +
+      '99 bottles of beer on the wall.\n';
+    expect(new Bottles().verses(6, 0)).toBe(expected);
+  });
+
 });
 
 
